@@ -24,7 +24,7 @@ export default Statistics;
 Statistics.propTypes = {
   title: PropTypes.string,
 
-  stats: PropTypes.shape({
+  stats: PropTypes.shape.isRequired({
     id: PropTypes.number.isRequired,
     label: PropTypes.string.isRequired,
     percentage: PropTypes.number.isRequired,
